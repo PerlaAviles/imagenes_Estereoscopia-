@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Estereoscópica y Anaglifo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="activity-title">
+        <h1>Estereoscopia de imágenes</h1>
+        <p>Esta pagina refleja una exploración de la visión en diferentes profundidades mediante imágenes estereoscópicas y anaglifos</p>
+    </div>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#personal">Objeto</a></li>
+                <li><a href="#edificios">Persona</a></li>
+                <li><a href="#objetos">Infraestructura de Edificios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección: Personal -->
+  <!-- Sección: Objetos -->
+<section id="personal">
+    <h2>Objetos</h2>
+    <div class="carousel-container" data-section="personal">
+        <!-- Imagen 1 con descripción -->
+        <div class="image-container">
+            <img src="/Imagenes/Objeto/left_right1a.JPG" alt="Anaglifo - Personal" onclick="openModal(this)">
+            <p class="image-description"> Cercano </p>
+        </div>
+        <!-- Imagen 2 con descripción -->
+        <div class="image-container">
+            <img src="/Imagenes/Objeto/left_right2a.JPG" alt="Estereoscópica Izquierda" onclick="openModal(this)">
+            <p class="image-description">Lejano</p>
+        </div>
+        <!-- Imagen 3 con descripción -->
+        <div class="image-container">
+            <img src="/Imagenes/Objeto/left_right3a.JPG" alt="Estereoscópica Derecha" onclick="openModal(this)">
+            <p class="image-description">Medio</p>
+        </div>
+    </div>
+</section>
+
+   <!-- Sección: Infraestructura de Edificios -->
+<section id="edificios">
+    <h2>Personas</h2>
+    <div class="carousel-container">
+        <div class="image-container">
+            <img src="/Imagenes/Me/left_right_me_2.JPG" alt="Anaglifo - Edificios" onclick="openModal(this)">
+            <p class="image-description"> Cercano </p>
+        </div>
+        <div class="image-container">
+            <img src="/Imagenes/Me/left_right_me_1JPG.JPG" alt="Estereoscópica Izquierda" onclick="openModal(this)">
+            <p class="image-description">Lejano</p>
+        </div>
+        <div class="image-container">
+            <img src="/Imagenes/Me/left_right_me_3.JPG" alt="Estereoscópica Derecha" onclick="openModal(this)">
+            <p class="image-description">Medio</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección: Objetos -->
+   <!-- Sección: Objetos -->
+<section id="objetos">
+    <h2>Infraestructura de Edificios</h2>
+    <div class="carousel-container">
+        <div class="image-container">
+            <img src="/Imagenes/Edificio/1.JPG" alt="Anaglifo - Objetos" onclick="openModal(this)">
+            <p class="image-description"> Cercano </p>
+        </div>
+        <div class="image-container">
+            <img src="/Imagenes/Edificio/2.JPG" alt="Estereoscópica Izquierda" onclick="openModal(this)">
+            <p class="image-description">Lejano</p>
+        </div>
+        <div class="image-container">
+            <img src="/Imagenes/Edificio/3.JPG" alt="Estereoscópica Derecha" onclick="openModal(this)">
+            <p class="image-description">Medio</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Modal para ampliar la imagen -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-modal" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PERLA AVILÉS - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
